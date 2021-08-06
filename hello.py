@@ -1,6 +1,10 @@
 import pandas as pd
-df=pd.DataFrame({"sub":["English","hindi","telugu","urdu","odia","chemistry"],
-                 "marks":[90,78,67,58,98,76]
-                 })
-print(df)
-print(df[df['marks']>=60])
+def create_dataframe(dict1):
+    df=pd.DataFrame(dict1)
+    return df
+
+dict1={"sub":["English","hindi","telugu","urdu","odia","chemistry"],
+             "marks":[90,78,67,58,98,76]
+       }
+df=create_dataframe(dict1)
+print(df[df['marks']>=70])
