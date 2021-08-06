@@ -7,3 +7,5 @@ print(df1)
 for col in df1.columns:
     print(df1[col].mean())
     print(max(df1[col]))
+    print(min(df1[col]))
+    print("good")
