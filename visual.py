@@ -6,3 +6,4 @@ df1=create_dataframe(dict1)
 print(df1)
 for col in df1.columns:
     print(df1[col].mean())
+    print(max(df1[col]))
